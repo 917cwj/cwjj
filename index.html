@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>个人主页</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #d6f0f5;
+    font-family: "Microsoft Yahei", sans-serif;
+}
+nav{
+    background-color: #b0e4ea;
+    text-align: center;
+    padding: 14px 0;
+}
+nav a{
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    margin: 0 42px;
+}
+nav a:hover{
+    color: #ff6699;
+}
+.banner{
+    text-align: center;
+    padding: 20px 0;
+}
+.jp-title{
+    color: #ff77aa;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+.banner-img{
+    width: 72%;
+}
+.page{
+    display: none;
+    width: 92%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+}
+.page:target{
+    display: block;
+}
+#page-index{
+    display: block;
+}
+h1{
+    text-align: center;
+    color: #44aabb;
+    margin: 20px 0;
+}
+.flex-row{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+.grid-row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+.img-box img{
+    width: 100%;
+}
+.card{
+    border: 2px solid #999999;
+    padding: 22px;
+    flex: 1;
+}
+.card h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.line-item{
+    font-size: 18px;
+    line-height: 2.2;
+}
+.form-area{
+    background-color: #d6f0f5;
+    border-radius: 50%;
+    padding: 35px;
+    width: 100%;
+}
+.form-item{
+    font-size: 22px;
+    margin: 12px 0;
+}
+hr{
+    border: none;
+    border-bottom: 1px solid #333;
+}
+</style>
+</head>
+<body>
+<nav>
+    <a href="#page-index">首页</a>
+    <a href="#page-hobby">我的爱好</a>
+    <a href="#page-hometown">我的家乡</a>
+    <a href="#page-photo">我的相册</a>
+    <a href="#page-message">给我留言</a>
+</nav>
+
+<div class="banner">
+    <div class="jp-title">ちいかわ</div>
+    <img class="banner-img" src="images/banner.png" alt="三小只画画">
+</div>
+
+<!-- 首页 -->
+<div id="page-index" class="page">
+    <div class="flex-row">
+        <div style="width:220px;background:#73a9bf;padding:10px;">
+            <img src="images/avatar.png" alt="头像">
+        </div>
+        <div class="card">
+            <h2>个人信息</h2>
+            <p class="line-item">姓名：才文静</p>
+            <p class="line-item">性别：女</p>
+            <p class="line-item">年龄：19</p>
+            <p class="line-item">学校：郑州信息科技职业学校</p>
+            <p class="line-item">专业：计算机应用技术</p>
+            <p class="line-item">学号：2025380801</p>
+        </div>
+        <div class="card">
+            <h2>个人介绍</h2>
+            <p>你好呀！很高兴认识你~</p>
+            <p style="margin-top:10px;">我叫才文静，来自河南商丘——这座满是烟火气息，藏着悠久历史韵味的小城。这里既有老街巷的温柔烟火，也沉淀着独属于中原大地的人文底蕴。</p>
+            <p style="margin-top:10px;">我性格随和舒展，平日里喜欢拍照，感受身边一切美好事物。</p>
+        </div>
+    </div>
+</div>
+
+<!-- 我的爱好 -->
+<div id="page-hobby" class="page">
+    <h1>我的爱好</h1>
+    <div class="grid-row">
+        <div class="img-box">
+            <img src="images/hobby1.jpg">
+            <div style="background:#73a9bf;color:#fff;text-align:center;padding:10px;font-size:22px;">摄影</div>
+        </div>
+        <div class="img-box">
+            <img src="images/hobby2.jpg">
+            <div style="background:#73a9bf;color:#fff;text-align:center;padding:10px;font-size:22px;">听歌</div>
+        </div>
+        <div class="img-box">
+            <img src="images/hobby3.jpg">
+            <div style="background:#73a9bf;color:#fff;text-align:center;padding:10px;font-size:22px;">手工</div>
+        </div>
+        <div class="img-box">
+            <img src="images/hobby4.jpg">
+            <div style="background:#73a9bf;color:#fff;text-align:center;padding:10px;font-size:22px;">日记</div>
+        </div>
+    </div>
+</div>
+
+<!-- 我的家乡 -->
+<div id="page-hometown" class="page">
+    <h1>我的家乡</h1>
+    <div class="flex-row">
+        <div style="width:45%;">
+            <img src="images/hometown.jpg" style="width:100%;">
+        </div>
+        <div style="flex:1;">
+            <div style="background:#b0e4ea;display:inline-block;padding:8px 20px;font-size:24px;">家乡介绍</div>
+            <p style="margin-top:15px;line-height:1.8;font-size:17px;">
+商丘市坐落于河南省东部，地处豫鲁苏皖四省接合部，是华夏文明重要发祥地之一，素有“三商之源、华商之都”的美誉，同时也是国家历史文化名城、全国综合交通枢纽城市。
+            </p>
+            <p style="margin-top:15px;line-height:1.8;font-size:17px;">
+这里是商族起源、商朝开国之地，上古时期燧人氏在此钻木取火，仓颉在此造字，王亥开创华夏商业先河，拥有距今四千多年的文明积淀。境内留存商丘古城、芒砀山汉梁王墓群、火神台等大量珍贵历史古迹，完整见证中原上古文明与汉文化发展脉络。
+            </p>
+            <p style="margin-top:15px;line-height:1.8;font-size:17px;">
+商丘还是全国重要粮食生产基地、冷链物流产业基地，高铁、普铁、高速路网四通八达；同时兼具浓郁中原民俗文化，火文化、汉文化、戏曲文化、剪纸泥塑非遗传承底蕴深厚，是兼具厚重历史烟火与现代发展活力的中原城市。
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- 我的相册 -->
+<div id="page-photo" class="page">
+    <div class="flex-row">
+        <div style="width:200px;text-align:center;">
+            <img src="images/rabbit.png">
+            <div style="background:#b0e4ea;font-size:24px;padding:10px;">我的相册</div>
+        </div>
+        <div style="flex:1;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;">
+            <img style="border:3px solid #73a9bf;" src="images/photo1.jpg">
+            <img style="border:3px solid #73a9bf;" src="images/photo2.jpg">
+            <img style="border:3px solid #73a9bf;" src="images/photo3.jpg">
+            <img style="border:3px solid #73a9bf;" src="images/photo4.jpg">
+            <img style="border:3px solid #73a9bf;" src="images/photo5.jpg">
+            <img style="border:3px solid #73a9bf;" src="images/photo6.jpg">
+        </div>
+        <div style="width:200px;">
+            <img src="images/cat_sleep.png">
+        </div>
+    </div>
+</div>
+
+<!-- 给我留言 -->
+<div id="page-message" class="page">
+    <div class="flex-row">
+        <div style="width:250px;">
+            <img src="images/group.png">
+        </div>
+        <div style="flex:1;display:flex;align-items:center;gap:20px;">
+            <div style="background:#73a9bf;color:#fff;padding:15px 10px;font-size:22px;">在线留言</div>
+            <div class="form-area">
+                <p class="form-item">姓名 <hr></p>
+                <p class="form-item">邮箱 <hr></p>
+                <p class="form-item">想对我说些什么呀(0 ω 0) <hr><hr><hr></p>
+            </div>
+        </div>
+        <div style="width:250px;">
+            <img src="images/bread.png">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
